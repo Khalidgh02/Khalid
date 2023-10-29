@@ -1,0 +1,306 @@
+/*Khalid ghaith 2142009*/
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:  sans-serif;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+header{
+  height: 100vh;
+  background: url(38_modern_web_design.webp) no-repeat center;
+  position: relative;
+}
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar img{
+  width: 80px;
+}
+#navbar ul{
+  display: flex;
+  margin-right:100px;
+}
+#navbar ul li a{
+  padding: 15px 20px; ;
+  color: #fff;
+  font-weight: 600;
+}
+#navbar ul li a:hover{
+  background-color: #fff;
+  color: blue;
+  border-radius: 2px;
+}
+header  .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+
+}
+header .content h1{
+  font-size: 40px;
+  color: #fff;
+  
+}
+header .content p{
+  font-size: 20px 0 40px;
+  color: #fff;
+}
+header::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0,0.5);
+
+}
+header *{
+  z-index: 20;
+}
+#about {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(37, 37, 208, 0.878);
+  color: #fff;
+  padding: 50px 0;
+}
+
+#about .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#about .title h2 {
+  font-size: 40px;
+  color: #fff; 
+  margin-bottom: 20px;
+}
+
+#about .title p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+#about .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#about .about-content img {
+  width: 200px;
+  border-radius: 8px;
+  order: 2;
+}
+
+#about .about-content p {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-right: 20px;
+  order: 1;
+}
+#education {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 109);
+  padding: 50px 0;
+  color: #fff;
+}
+
+#education .heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#education .columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#education .box {
+  background-color: #9a9a9a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#education h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#education p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+#projects .heading {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+#projects .columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  width: 90%;
+  max-width: 1100px;
+}
+
+#projects .box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#projects .box h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#projects .box p {
+  font-size: 16px;
+  color: #777;
+}
+#contact {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#contact h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item {
+  margin: 0 10px;
+}
+
+.contact-item a {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item img {
+  width: 40px; 
+  height: 40px; 
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+@media (max-width: 576px) {
+  header .content h1 {
+    font-size: 28px;
+  }
+
+  header .content p {
+    font-size: 16px;
+  }
+
+  #navbar ul {
+    margin-right: 20px;
+  }
+
+  #navbar ul li a {
+    padding: 10px 15px;
+  }
+
+  #about .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about .about-content img {
+    width: 200px;
+    margin: 20px 0;
+  }
+
+  #about .about-content p {
+    margin-left: 0;
+  }
+
+  #education .columns {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+  header .content h1 {
+    font-size: 32px;
+  }
+
+  header .content p {
+    font-size: 18px;
+  }
+
+  #navbar ul {
+    margin-right: 50px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header .content h1 {
+    font-size: 36px;
+  }
+
+  header .content p {
+    font-size: 18px;
+  }
+
+  #navbar ul {
+    margin-right: 80px;
+  }
+}
